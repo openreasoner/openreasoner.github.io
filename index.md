@@ -21,7 +21,7 @@ Reasoning in LLMs
 <p align='center'>
 <img src="./assets/images/openr_logo.png" alt="Description" width="200" />
 <p align="center">
-    <a href="https://arxiv.org/abs/xxxxx">Paper</a>
+    <a href="https://github.com/openreasoner/openr/tree/main/reports">Paper</a>
     ·
     <!-- <a href="https://colab.research.google.com/XXXXX">Demo</a> -->
     <!-- · -->
@@ -47,6 +47,7 @@ Reasoning in LLMs
 {:toc}
 
 ---
+
 
 
 ## 🚀 News and Updates
