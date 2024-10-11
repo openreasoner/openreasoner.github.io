@@ -10,7 +10,7 @@ nav_order: 1
 
 
 An Open Source Framework for Advanced
-Reasoning in LLMs
+Reasoning with LLMs
 {: .fs-6 .fw-300 }
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -25,7 +25,13 @@ Reasoning in LLMs
     ·
     <a href="https://github.com/openreasoner/openr/blob/main/reports/Tutorial-LLM-Reasoning-Wang.pdf">Tutorial</a>
     ·
+    <a href="https://github.com/openreasoner/openr/">Code</a>
+    ·
     <a href="https://openreasoner.github.io/">Docs</a>
+    ·
+    <a href="https://huggingface.co/datasets/openreasoner/MATH-APS">Data</a>
+    ·
+    <a href="https://huggingface.co/openreasoner/Math-psa">Model</a>
     ·
     <a href="https://github.com/openreasoner/openr/issues">Issue</a>
     <!-- · -->
@@ -128,9 +134,8 @@ To cite this project in publications:
 
 ```text
 @article{openr2024,
-  title = {OpenR: An Open Source Framework for Advancing
-Reasoning in Large Language Models},
-  url = {https://github.com/openreasoner/openr/tree/main/reports},
+  title = {OpenR: An Open Source Framework for Advanced Reasoning with Large Language Models},
+  url = {https://github.com/openreasoner/openr/blob/main/reports/OpenR-Wang.pdf},
   author = {Jun Wang, Meng Fang, Ziyu Wan, Muning Wen, Jiachen Zhu, Anjie Liu, Ziqin Gong, Yan
 Song, Lei Chen, Lionel M. Ni, Linyi Yang, Ying Wen, Weinan Zhang},
   year = {2024}
