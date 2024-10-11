@@ -52,7 +52,7 @@ Reasoning in LLMs
 
 ## 🚀 News and Updates
 
-<span style="color: #555; font-weight: bold;">[11/10/2024]</span> <span style="color: #007acc;">OpenR has been released!</span>
+<span style="color: #555; font-weight: bold;">[11/10/2024]</span> <span style="color: #007acc;">*OpenR* has been released!</span>
 
 
 ## Key Features
@@ -113,7 +113,11 @@ Our work is the first to provide an open-source framework demonstrating how the 
 
 ## How to *OpenR*?
 
-> Simply follow our [guides](./docs/get-start/index.html)!!
+<ul>
+  <li><a href="./docs/get-start.html">Quick Start</a></li>
+  <li><a href="./docs/usage/index.html">Usage</a></li>
+  <li><a href="./docs/datasets.html">Datasets</a></li>
+</ul>
 
 To any interested in making ***OpenR*** better, there are still improvements that need to be done. A full TODO list will be available soon.
 
@@ -126,7 +130,7 @@ To cite this project in publications:
 @article{openr2024,
   title = {OpenR: An Open Source Framework for Advancing
 Reasoning in Large Language Models},
-  url = {},
+  url = {https://github.com/openreasoner/openr/tree/main/reports},
   author = {Jun Wang, Meng Fang, Ziyu Wan, Muning Wen, Jiachen Zhu, Anjie Liu, Ziqin Gong, Yan
 Song, Lei Chen, Lionel M. Ni, Linyi Yang, Ying Wen, Weinan Zhang},
   year = {2024}
