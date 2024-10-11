@@ -6,8 +6,12 @@ nav_order: 5
 
 
 # Reasoning
-After trained the process reward model,
-we implement how to do reasoning with diffrent search strategies
+Once a
+high-quality process reward model is trained, we integrate it into the decoding process alongside the
+language model, enabling guided search and scoring or voting across multiple generations.
+
+>OpenR supports various search algorithms — such as *beam search*, *best-of-N selection*, and others, each with unique advantages depending on the quality of PRMs.
+
 
 ## Basic Command
 
@@ -25,7 +29,7 @@ python reason/evaluation/evaluate.py \
 ```
 ### Parameters
 
-- **`--LM`**: Specifies the policy model. Available models include `Qwen2.5-Math-1.5B-Instruct` and others. Replace with the desired model path or name.
+- **`--LM`**: Specifies the policy model. Available models include `Qwen2.5-Math-1.5B-Instruct` and others. Replace with the desired model path or name. The code is compatible with various base models, including the Llama, Qwen, and Mistral series.
 - **`--RM`**: Sets the reward model. In this example, `math-shepherd-mistral-7b-prm` is used, which can be replaced with any supported reward model.
 - **`--task_name`**: Sets the dataset/task name. Examples include `MATH`, `gsm8k`, etc.
 - **`--temperature`**: Controls the randomness of the model output. A higher temperature increases randomness, while a lower value makes the output more deterministic.

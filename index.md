@@ -4,7 +4,7 @@ layout: home
 nav_order: 1
 ---
 
-# OpenR
+# ***OpenR***
 {: .no_toc }
 
 
@@ -68,19 +68,19 @@ Reasoning in LLMs
 
 <div style="display: flex; align-items: center;">
 <ul style="list-style-type: none; padding: 0;">
-    <li><strong>✅ Test-time Computation</strong></li>
-    <li><strong>✅ Test-time Scaling Law</strong></li>
     <li><strong>✅ Process-supervision Data Release</strong></li>
     <li><strong>✅ Online RL Training</strong></li>
     <li><strong>✅ Generative and Discriminative PRM Training</strong></li>
     <li><strong>✅ Multiple Search Strategies</strong></li>
+    <li><strong>✅ Test-time Computation</strong></li>
+    <li><strong>✅ Test-time Scaling Law</strong></li>
 </ul>
     <img src="./assets/images/logo_text.png" alt="Description" style="width: 300px; margin-left: 50px; float: right;">
 </div>
 
-## What is OpenR?
+## What is *OpenR*?
 
-> **OpenR** is an open-source framework that integrates **search**, **reinforcement learning** and **process supervision** to improve **reasoning** in Large Language Models.
+> ***OpenR*** is an open-source framework that integrates **search**, **reinforcement learning** and **process supervision** to improve **reasoning** in Large Language Models.
 
 
 
@@ -88,14 +88,14 @@ Reasoning in LLMs
 OpenAI o1 has demonstrated that leveraging reinforcement learning to inherently
 integrate reasoning steps during inference can greatly improve a model’s reasoning abilities. 
 
-We attribute these enhanced reasoning capabilities to the integration of **search**, **reinforcement learning**, and **process supervision**, which collectively drive the development of **OpenR**.
+We attribute these enhanced reasoning capabilities to the integration of **search**, **reinforcement learning**, and **process supervision**, which collectively drive the development of ***OpenR***.
 
 
 Our work is the first to provide an open-source framework demonstrating how the effective utilization of these techniques enables LLMs to achieve advanced reasoning capabilities, 
 
 
 
-## What Can OpenR Do?
+## What Can *OpenR* Do?
 
 > We believe the ability of reasoning can be improved by the following:
 
@@ -103,27 +103,34 @@ Our work is the first to provide an open-source framework demonstrating how the 
 
 <!-- OpenReasoner is an open-source framework designed to enhance reasoning capabilities in Large Language Models (LLMs) by focusing on three key pathways: -->
 
-- **Data Acquisition**: This pathway emphasizes the critical role of high-quality, diverse datasets in training LLMs. It includes data collection for both model pre-training and fine-tuning, with a specific focus on **reasoning** process, which are central to OpenResoner's objectives. Given the significant costs associated with human annotation of reasoning data, **we offer an automated pipeline that extracts reasoning steps from outcome labels**, reducing manual effort while ensuring the collection of valuable reasoning information.
+- **Data Acquisition**: This pathway emphasizes the critical role of high-quality, diverse datasets in training LLMs. It includes data collection for both model pre-training and fine-tuning, with a specific focus on **reasoning** process, which are central to *OpenR*'s objectives. Given the significant costs associated with human annotation of reasoning data, **we offer an automated pipeline that extracts reasoning steps from outcome labels**, reducing manual effort while ensuring the collection of valuable reasoning information.
 
-- **Training**: This pathway centers around training strategies that enhance the reasoning capabilities of LLMs, from the perspective of both generative models and reward models. OpenR provide toolkits such as **online reinforcement learning** to train LLMs as the proposer, and methods to learn **Process-supervision Reward Models** (PRMs) as the verifier.
+- **Training**: This pathway centers around training strategies that enhance the reasoning capabilities of LLMs, from the perspective of both generative models and reward models. *OpenR* provide toolkits such as **online reinforcement learning** to train LLMs as the proposer, and methods to learn **Process-supervision Reward Models** (PRMs) as the verifier.
 
-- **Inference**: This pathway focuses on the scaling law at test-time, enabling LLM to give refined outputs through ways of generation or searching. OpenR allows us to **select among various search algorithms**—such as *beam search*, *best-of-N selection*, and others—each with unique advantages depending on the quality of the process reward models.
+- **Inference**: This pathway focuses on the scaling law at test-time, enabling LLM to give refined outputs through ways of generation or searching. *OpenR* allows us to **select among various search algorithms**—such as *beam search*, *best-of-N selection*, and others—each with unique advantages depending on the quality of the process reward models.
 
 
 
-## How to OpenR?
+## How to *OpenR*?
 
 > Simply follow our [guides](./docs/get-start/index.html)!!
 
-To any interested in making **OpenR** better, there are still improvements that need to be done. A full TODO list will be available soon.
+To any interested in making ***OpenR*** better, there are still improvements that need to be done. A full TODO list will be available soon.
 
 
-## Citing OpenR
+## Citing *OpenR*
 
 To cite this project in publications:
 
 ```text
-@
+@article{openr2024,
+  title = {OpenR: An Open Source Framework for Advancing
+Reasoning in Large Language Models},
+  url = {},
+  author = {Jun Wang, Meng Fang, Ziyu Wan, Muning Wen, Jiachen Zhu, Anjie Liu, Ziqin Gong, Yan
+Song, Lei Chen, Lionel M. Ni, Linyi Yang, Ying Wen, Weinan Zhang},
+  year = {2024}
+}
 ```
 
 

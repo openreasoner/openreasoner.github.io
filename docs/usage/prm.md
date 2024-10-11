@@ -9,6 +9,8 @@ nav_order: 4
 
 In Process-supervision Reward Models (PRMs), the goal is to determine whether the sequence of solution process is currently on the right track, so it should output a binary indicator of correctness.
 
+>*OpenR* trains PRMs through supervised fine-tuning on an LLM, with the correct/incorrect distinction serving as the classification label.
+
 ## Data Preprocessing
 
 The datasets we used to train our PRM include [PRM800K](https://github.com/openai/prm800k), [Math-Shepherd](https://huggingface.co/datasets/peiyi9979/Math-Shepherd) and our dataset --- MATH-APS. These datasets are structured into three parts:
@@ -47,7 +49,7 @@ two additional tokens representing positive and negative feedback, denoted as `+
 
 From the logits of the positive and negative tokens in the position, we apply softmax and use the score of the `+` token as the prediction result (retrieved by `preprocess_logits_for_metrics()` in `prm/supervise/evaluate.py `).
 
-One we either evaluate or train through:
+Then we can either evaluate or train through:
 ```python
 # Initialize the Trainer
 trainer = Trainer(
@@ -63,4 +65,18 @@ trainer = Trainer(
 
 trainer.evaluate()
 trainer.train()
+```
+
+>*OpenR* currently provide training code for both Llama and Qwen base model:
+
+```bash
+\\ single gpu
+python finetune_qwen . py --total_batch_size 256 \
+                          --learning_rate 1e-4 \
+                          --datasets all \
+
+\\ multi gpu
+torchrun -- nproc_per_node = 2 finetune_qwen.py --total_batch_size 256 \
+                                                --learning_rate 1e-4 \
+                                                --datasets all \
 ```

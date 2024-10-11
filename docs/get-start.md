@@ -6,7 +6,7 @@ nav_order: 2.5
 # Quick Start
 {: .no_toc }
 
-Welcome to the **OpenR** Manual, designed to guide you through the process of training large language models (LLMs) to reason effectively. Here we provide a quick guide of how to successfully run the codebase of **OpenR**.
+Welcome to the ***OpenR*** Manual, designed to guide you through the process of training large language models (LLMs) to reason effectively. Here we provide a quick guide of how to successfully run the codebase of ***OpenR***.
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -85,4 +85,10 @@ Before training, please modify the `$dataset_path`, `$model_name_or_path` and `$
 ```bash
 cd train/mat/scripts
 bash train_llm.sh
+```
+
+## Run PRM Training
+
+```python
+python prm/code/finetune_qwen.py --total_batch_size 10 --learning_rate 0.001
 ```

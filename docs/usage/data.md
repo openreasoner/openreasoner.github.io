@@ -7,13 +7,13 @@ nav_order: 2
 
 # Data
 
-Here we introduce basic usage for annotated data generation in the context of training a process-supervision reward model. We resort to the method proposed by the paper [*Improve Mathematical Reasoning in Language Models by Automated Process Supervision*](https://arxiv.org/pdf/2406.06592) and implement in a fairly simple way (Data Acquisition section in the report). 
+Here we introduce basic usage for annotated data generation in the context of training a process-supervision reward model. We resort to the method proposed by the paper [*Improve Mathematical Reasoning in Language Models by Automated Process Supervision*](https://arxiv.org/pdf/2406.06592) and implement in a fairly simple way. 
+
+>*OpenR* augments the data by automatically generating synthetic samples
 
 ## Prerequisites
 
 - **System Requirements**: Same as the root requirements
-
-- **Dependencies**: (a separate more detailed dependenies list?)
 
 - **Raw data**: this is the data you want to generate annotation for. In this repo, we provide an example dataset named `extracted_problems_and_answers.json`. (TODO: Description of the data? Copy the report here?). A snapshot will look like:
 
@@ -37,7 +37,7 @@ Here we introduce basic usage for annotated data generation in the context of tr
 You can simply generate annotated data by running the following command:
 
 ```bash
-python gen_data.py
+python data/gen_data.py
 ```
 
 it will load the data file and use a LLM to generate multiple response, followed by computation of Monte-Carlo estimate through binary search.

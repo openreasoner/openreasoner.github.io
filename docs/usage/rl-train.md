@@ -8,6 +8,9 @@ nav_order: 4.5
 # RL Training
 With built MATH environment, we can train the language models using reinforcment learning algorithms.
 
+> *OpenR* trains LLMs using Proximal Policy Optimization (PPO) and its variants to align generated language outputs with desired actions.
+
+
 ## Basic Command
 The following command demonstrates how to start training using the Qwen 1.5B model as the policy model and the Qwen 7B model as the reward model on the prealgebra dataset.
 
@@ -27,7 +30,7 @@ python -u train_math.py \
 
 ## Supported Algorithms
 
-This framework supports various reinforcement learning algorithms, including:
+This framework supports different online RL algorithms, including:
 
 - **APPO**: Asynchronous Proximal Policy Optimization
 - **GRPO**: Group Relative Policy Optimization
@@ -72,3 +75,6 @@ Options to control evaluation frequency and logging:
 - **`--eval_interval`**: Interval between evaluations.
 - **`--log_interval`**: Interval for logging during training.
 - **`--save_interval`**: Interval for saving model checkpoints.
+
+<!-- ## Walking through the Code -->
+

@@ -10,8 +10,18 @@ nav_order: 3
 We transform math problems into a language-augmented Markov Decision
 Process (MDP). 
 
-## `CoTEnv`
+## Reasoning as Markov Decision Process (MDP)
+
+We formulate a reasoning process $ Q \rightarrow \{R\} \rightarrow A$ as a MDP where each state $S_t$ is an aggregation of previous state $S_{t-1}$ and current reasoning output $R_t$. The current reasoning output is an "action" generated from a LLM policy $\pi (R\|S) $. The reward function $V(S)$ can be a PRM.
+
+
+![MDP](../../assets/images/mdp.png)
+
+
+## Class `CoTEnv` 
+
 Take `class: CoTEnv(BaseEnv)` as an example, an initial state $s_0$ represents a given mathematical problem:
+
 ```python
 self._init_query = self.build_query_str(
     cot_examples=self._cot_example_str,
@@ -48,7 +58,7 @@ def step(self, action, update_legal_action=True):
 ```
 
 
-## `MATH_ENV`
+## Class `MATH_ENV`
 
 Mostly Based on `CoTEnv`, with additional modification of CoT example and problem formats. In `/envs/MATH/datasets` we provide both training and testing math problems as an example. You can also test the environment by running testing code `/envs/tests/test_math.py`
 
