@@ -9,7 +9,7 @@ nav_order: 1
 
 
 
-An Open Source Framework for Advancing
+An Open Source Framework for Advanced
 Reasoning in LLMs
 {: .fs-6 .fw-300 }
 
@@ -21,10 +21,10 @@ Reasoning in LLMs
 <p align='center'>
 <img src="./assets/images/openr_logo.png" alt="Description" width="200" />
 <p align="center">
-    <a href="https://github.com/openreasoner/openr/tree/main/reports">Paper</a>
+    <a href="https://github.com/openreasoner/openr/blob/main/reports/OpenR-Wang.pdf">Paper</a>
     ·
-    <!-- <a href="https://colab.research.google.com/XXXXX">Demo</a> -->
-    <!-- · -->
+    <a href="https://github.com/openreasoner/openr/blob/main/reports/Tutorial-LLM-Reasoning-Wang.pdf">Tutorial</a>
+    ·
     <a href="https://openreasoner.github.io/">Docs</a>
     ·
     <a href="https://github.com/openreasoner/openr/issues">Issue</a>
