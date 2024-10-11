@@ -89,6 +89,6 @@ For customization you can
 
 - Use your own dataset: you can replace `extracted_problems_and_answers.json` with your own dataset.
 
-- Use other LLMs for rollout generation: replace `checkpoints` in function [`complete_answer()`](https://github.com/openreasoner/o1-dev/blob/7e1e42857ac0d5fce804181ca8dceed5f6c28f7d/data/utils.py#L13)
+- Use other LLMs for rollout generation: replace `checkpoints` in function `complete_answer()`
 
 - Use more advanced search method to replace naive binary search
