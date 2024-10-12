@@ -3,6 +3,10 @@ title: Results
 nav_order: 4.7
 ---
 
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 # Results
 {: .no_toc}
 
@@ -22,7 +26,7 @@ The figure shows that our PRM (Math-aps) can achieve the highest testing accurac
 
 <img src="../assets/images/MATH_subsampled.png">
 
-Both Best-of-N and Beam-Search methods significantly outperform Majority Vote, especially as the generation budget increases, showing a similar pattern with previous findings. Under low test-time computation budgets ($< 2^4$), Best-of-N methods demonstrate better performance compared to Beam Search, whereas Beam Search can reach matching performance given higher budgets, or even surpass Best-of-N with *PRM-Last* strategy used at budgets larger than $2^5$.
+Both Best-of-N and Beam-Search methods significantly outperform Majority Vote, especially as the generation budget increases, showing a similar pattern with previous findings. Under low test-time computation budgets ($$< 2^4$$), Best-of-N methods demonstrate better performance compared to Beam Search, whereas Beam Search can reach matching performance given higher budgets, or even surpass Best-of-N with *PRM-Last* strategy used at budgets larger than $$2^5$$.
 
 ## Online RL Leanring
 

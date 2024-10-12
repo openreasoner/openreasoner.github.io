@@ -4,6 +4,10 @@ parent: Usage
 nav_order: 3
 ---
 
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 
 # Environments
 
@@ -12,7 +16,10 @@ Process (MDP).
 
 ## Reasoning as Markov Decision Process (MDP)
 
-We formulate a reasoning process $ Q \rightarrow \{R\} \rightarrow A$ as a MDP where each state $S_t$ is an aggregation of previous state $S_{t-1}$ and current reasoning output $R_t$. The current reasoning output is an "action" generated from a LLM policy $\pi (R\|S) $. The reward function $V(S)$ can be a PRM.
+We formulate a reasoning process $$ Q \rightarrow \{R\} \rightarrow A$$ as a MDP where each state $$S_t$$ is an aggregation of previous state $$S_{t-1}$$ and current reasoning output $$R_t$$. The current reasoning output is an "action" generated from a LLM policy $$\pi (R\mid S) $$. The reward function $$V(S)$$ can be a PRM.
+
+<br>
+
 
 
 ![MDP](../../assets/images/mdp.png)
@@ -20,7 +27,7 @@ We formulate a reasoning process $ Q \rightarrow \{R\} \rightarrow A$ as a MDP w
 
 ## Class `CoTEnv` 
 
-Take `class: CoTEnv(BaseEnv)` as an example, an initial state $s_0$ represents a given mathematical problem:
+Take `class: CoTEnv(BaseEnv)` as an example, an initial state $$s_0$$ represents a given mathematical problem:
 
 ```python
 self._init_query = self.build_query_str(
@@ -31,17 +38,17 @@ self._init_query = self.build_query_str(
     is_few_shot=self.is_few_shot,
 )
 ```
-A language model will receive  this input and generates an intermediate reasoning step, denoted as an action $a_0$:
+A language model will receive  this input and generates an intermediate reasoning step, denoted as an action $$a_0$$:
 ```python
 self.action_history.append(action)
 ```
-This action $a_0$ is then concatenated with the initial problem $s_0$ to form the subsequent state $s_1 = [s_0, a_0]$:
+This action $$a_0$$ is then concatenated with the initial problem $s_0$ to form the subsequent state $$s_1 = [s_0, a_0]$$:
 ```python
 def get_state(self):
     ret = self._init_query + "".join(self.action_history)
     return ret
 ```
-which is used to infer the next action $a_1$. This iterative process continues, until the model aarrives at the final answer. After inferring each action $a_t$, the model receives a reward signal $r_t^{PRM} = R(s_t, a_t)$ from a well-trained PRM:
+which is used to infer the next action $$a_1$$. This iterative process continues, until the model aarrives at the final answer. After inferring each action $$a_t$$, the model receives a reward signal $$r_t^{PRM} = R(s_t, a_t)$$ from a well-trained PRM:
 ```python
 def get_reward(self):
     """To implement based on learned reward model"""
