@@ -10,7 +10,7 @@ Once a
 high-quality process reward model is trained, we integrate it into the decoding process alongside the
 language model, enabling guided search and scoring or voting across multiple generations.
 
->OpenR supports various search algorithms — such as *beam search*, *best-of-N selection*, and others, each with unique advantages depending on the quality of PRMs.
+>*OpenR* supports various search algorithms — such as *beam search*, *best-of-N selection*, and others, each with unique advantages depending on the quality of PRMs.
 
 
 ## Basic Command

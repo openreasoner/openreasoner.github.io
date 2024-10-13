@@ -4,19 +4,34 @@ layout: home
 nav_order: 1
 ---
 
-# ***OpenR***
-{: .no_toc }
+<!-- # ***OpenR***
+{: .no_toc } -->
 
+<h1>
+  <span style="font-size: 40px;font-weight: bold;font-style: italic;"> OpenR</span>
+  <span style="font-size: 20px;"> - An Open Source Framework for Advanced
+Reasoning with LLMs</span>
+</h1>
 
-
-An Open Source Framework for Advanced
+<!-- An Open Source Framework for Advanced
 Reasoning with LLMs
-{: .fs-6 .fw-300 }
+{: .fs-6 .fw-300 } -->
 
+[![GitHub contributors](https://img.shields.io/github/contributors/openreasoner/openr)][contributors-url]
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2Fopenreasoner%2Fopenr%2Fblob%2Fmain%2Freports%2FOpenR-Wang.pdf&up_message=Online&label=Paper&link=https%3A%2F%2Fgithub.com%2Fopenreasoner%2Fopenr%2Fblob%2Fmain%2Freports%2FOpenR-Wang.pdf)
+![GitHub License](https://img.shields.io/github/license/openreasoner/openr)
+<!-- ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/openreasoner/openr/main) -->
+[![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/openreasoner/openr)][issues-url]
+[![GitHub forks](https://img.shields.io/github/forks/openreasoner/openr)][forks-url]
+[![GitHub Repo stars](https://img.shields.io/github/stars/openreasoner/openr)][stars-url]
+[![HuggingFace Dataset](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](https://huggingface.co/openreasoner)
+
+
+<!-- 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
+[![Issues][issues-shield]][issues-url] -->
 
 <p align='center'>
 <img src="./assets/images/openr_logo.png" alt="Description" width="200" />
