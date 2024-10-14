@@ -20,11 +20,12 @@ Reasoning with LLMs
 [![GitHub contributors](https://img.shields.io/github/contributors/openreasoner/openr)][contributors-url]
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2Fopenreasoner%2Fopenr%2Fblob%2Fmain%2Freports%2FOpenR-Wang.pdf&up_message=Online&label=Paper&link=https%3A%2F%2Fgithub.com%2Fopenreasoner%2Fopenr%2Fblob%2Fmain%2Freports%2FOpenR-Wang.pdf)
 ![GitHub License](https://img.shields.io/github/license/openreasoner/openr)
-<!-- ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/openreasoner/openr/main) -->
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/openreasoner/openr)][issues-url]
 [![GitHub forks](https://img.shields.io/github/forks/openreasoner/openr)][forks-url]
 [![GitHub Repo stars](https://img.shields.io/github/stars/openreasoner/openr)][stars-url]
 [![HuggingFace Dataset](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](https://huggingface.co/openreasoner)
+[![X](https://img.shields.io/badge/openreasoner-%23000000.svg?logo=X&logoColor=white)](#https://x.com/openreasoner)
+
 
 
 <!-- 
