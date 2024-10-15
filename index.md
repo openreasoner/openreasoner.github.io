@@ -18,14 +18,13 @@ Reasoning with LLMs
 {: .fs-6 .fw-300 } -->
 
 [![GitHub contributors](https://img.shields.io/github/contributors/openreasoner/openr)][contributors-url]
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fgithub.com%2Fopenreasoner%2Fopenr%2Fblob%2Fmain%2Freports%2FOpenR-Wang.pdf&up_message=Online&label=Paper&link=https%3A%2F%2Fgithub.com%2Fopenreasoner%2Fopenr%2Fblob%2Fmain%2Freports%2FOpenR-Wang.pdf)
+[![arXiv](https://img.shields.io/badge/ArXiv-2410.09671-b31b1b.svg)](https://arxiv.org/pdf/2410.09671)
 ![GitHub License](https://img.shields.io/github/license/openreasoner/openr)
 [![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/openreasoner/openr)][issues-url]
 [![GitHub forks](https://img.shields.io/github/forks/openreasoner/openr)][forks-url]
 [![GitHub Repo stars](https://img.shields.io/github/stars/openreasoner/openr)][stars-url]
 [![HuggingFace Dataset](https://img.shields.io/badge/Hugging%20Face-FFD21E?logo=huggingface&logoColor=000)](https://huggingface.co/openreasoner)
 [![X](https://img.shields.io/badge/openreasoner-%23000000.svg?logo=X&logoColor=white)](#https://x.com/openreasoner)
-
 
 
 <!-- 
@@ -37,7 +36,7 @@ Reasoning with LLMs
 <p align='center'>
 <img src="./assets/images/openr_logo.png" alt="Description" width="200" />
 <p align="center">
-    <a href="https://github.com/openreasoner/openr/blob/main/reports/OpenR-Wang.pdf">Paper</a>
+    <a href="https://arxiv.org/pdf/2410.09671">Paper</a>
     ·
     <a href="https://github.com/openreasoner/openr/blob/main/reports/Tutorial-LLM-Reasoning-Wang.pdf">Tutorial</a>
     ·
@@ -73,6 +72,8 @@ Reasoning with LLMs
 
 
 ## 🚀 News and Updates
+
+<span style="color: #555; font-weight: bold;">[11/10/2024]</span> Our paper is on <span style="color: #007acc;" > [**Arxiv**](https://arxiv.org/abs/2410.09671)</span> !
 
 <span style="color: #555; font-weight: bold;">[11/10/2024]</span> <span style="color: #007acc;">*OpenR* has been released!</span>
 
@@ -151,7 +152,7 @@ To cite this project in publications:
 ```text
 @article{openr2024,
   title = {OpenR: An Open Source Framework for Advanced Reasoning with Large Language Models},
-  url = {https://github.com/openreasoner/openr/blob/main/reports/OpenR-Wang.pdf},
+  url = {https://arxiv.org/pdf/2410.09671},
   author = {Jun Wang, Meng Fang, Ziyu Wan, Muning Wen, Jiachen Zhu, Anjie Liu, Ziqin Gong, Yan
 Song, Lei Chen, Lionel M. Ni, Linyi Yang, Ying Wen, Weinan Zhang},
   year = {2024}
