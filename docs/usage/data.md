@@ -15,7 +15,7 @@ Here we introduce basic usage for annotated data generation in the context of tr
 
 - **System Requirements**: Same as the root requirements
 
-- **Raw data**: this is the data you want to generate annotation for. In this repo, we provide an example dataset named `extracted_problems_and_answers.json`. (TODO: Description of the data? Copy the report here?). A snapshot will look like:
+- **Raw data**: this is the data you want to generate annotation for. In this repo, we provide an example dataset named `extracted_problems_and_answers.json`. A snapshot will look like:
 
 ```json
 [
