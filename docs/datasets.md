@@ -25,10 +25,7 @@ on expensive human annotations, enabling more scalable data collection. The data
 
 > MATH-APS is the MATH dataset processed by OmegaPRM. 
 
-MATH-APS contains the *question, process* and *label* for each reasoning process. In the process, the solution is divided into multiple steps, each separated by a special step token (`\n\n\n\n\n`), marking the end of each step where the PRM can make predictions. The label is a classification of the entire process, with each step labelled as either `+` or `-` based on the correctness of the solution. MATH-APS scores steps with values between 0 and 1, so we label steps whose score is greater than 0.5
-as positive and others negative.
-
-We have released MATH-APS on [huggingface](https://huggingface.co/datasets/openreasoner/MATH-APS).
+We have released MATH-APS on [huggingface](https://huggingface.co/datasets/openreasoner/MATH-APS). For more details, please refer to our [paper](https://arxiv.org/pdf/2410.09671).
 
 
 ## 🔢 PRM800K

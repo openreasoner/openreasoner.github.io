@@ -18,7 +18,6 @@ The following command demonstrates how to start training using the Qwen 1.5B mod
 
 ```python
 python -u train_math.py \
-    --dataset_name "prealgebra" \
     --dataset_path "./math_500.jsonl" \
     --model_name_or_path "./Qwen2.5-Math-1.5B" \         
     --prm_model_name_or_path "./Qwen2.5-Math-7B-Instruct" \
