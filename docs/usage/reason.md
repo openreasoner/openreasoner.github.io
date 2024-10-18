@@ -15,7 +15,14 @@ language model, enabling guided search and scoring or voting across multiple gen
 
 ## Basic Command
 
-To run inference using the Qwen 1.5B model as the policy model and Mistral-7B as the reward model on the MATH dataset, use the following command:
+To run inference using the Qwen 1.5B model as the policy model and Mistral-7B as the reward model on the MATH dataset, we need to first set-up two LLM services by running the following command:
+
+```bash
+sh reason/llm_service/create_service_qwen2.5_math_hf.sh
+```
+
+Next we run the evaluation script:
+
 
 ```python
 python reason/evaluation/evaluate.py \

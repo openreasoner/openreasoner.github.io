@@ -136,13 +136,15 @@ Our work is the first to provide an open-source framework demonstrating how the 
 
 ## How to *OpenR*?
 
+In the documentation, we provide some runnable code example as well as detailed usage of some key modules in the framework.
+
 <ul>
-  <li><a href="./docs/get-start.html">Quick Start</a></li>
-  <li><a href="./docs/usage/index.html">Usage</a></li>
-  <li><a href="./docs/datasets.html">Datasets</a></li>
+  <li><a href="./docs/get-start.html">Quick Start</a> contains some ready-to-run code examples that can give you a head start on <strong><em>OpenR</em></strong>.</li>
+  <li><a href="./docs/usage/index.html">Usage</a> discuss details of key modules in the codebase.</li>
+  <li><a href="./docs/datasets.html">Datasets</a> give you a sense of how we use data in our experiments.</li>
 </ul>
 
-To any interested in making ***OpenR*** better, there are still improvements that need to be done. A full TODO list will be available soon.
+To any interested in making ***OpenR*** better, there are still improvements that need to be done. We welcome any form of contribution and feel free to have a look at our [contribution guidance](https://github.com/openreasoner/openr/blob/main/CONTRIBUTING.md).
 
 
 ## Citing *OpenR*
@@ -150,12 +152,11 @@ To any interested in making ***OpenR*** better, there are still improvements tha
 To cite this project in publications:
 
 ```text
-@article{openr2024,
-  title = {OpenR: An Open Source Framework for Advanced Reasoning with Large Language Models},
-  url = {https://arxiv.org/pdf/2410.09671},
-  author = {Jun Wang, Meng Fang, Ziyu Wan, Muning Wen, Jiachen Zhu, Anjie Liu, Ziqin Gong, Yan
-Song, Lei Chen, Lionel M. Ni, Linyi Yang, Ying Wen, Weinan Zhang},
-  year = {2024}
+@article{wang2024openr,
+  title={OpenR: An Open Source Framework for Advanced Reasoning with Large Language Models},
+  author={Wang, Jun and Fang, Meng and Wan, Ziyu and Wen, Muning and Zhu, Jiachen and Liu, Anjie and Gong, Ziqin and Song, Yan and Chen, Lei and Ni, Lionel M and others},
+  journal={arXiv preprint arXiv:2410.09671},
+  year={2024}
 }
 ```
 

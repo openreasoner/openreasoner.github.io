@@ -70,7 +70,7 @@ Before running inference, please modify the following variables in the `reason/l
 sh reason/llm_service/create_service_math_shepherd.sh
 ```
 
-What this scrip does is to run two separate LLM services on your hardware, for generation and value inference respectively. After successfully running the script, you will be able to see the running services as:
+> What this scrip does is to run two separate LLM services on your hardware, for generation and value inference respectively. After successfully running the script, you will be able to see the running services as:
 
 ```
 $ ps -ef | grep openr
