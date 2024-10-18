@@ -70,6 +70,24 @@ Before running inference, please modify the following variables in the `reason/l
 sh reason/llm_service/create_service_math_shepherd.sh
 ```
 
+What this scrip does is to run two separate LLM services on your hardware, for generation and value inference respectively. After successfully running the script, you will be able to see the running services as:
+
+```
+$ ps -ef | grep openr
+
+xxx    623984  175535 17 18:47 pts/9  00:00:08
+/home/yanxue/anaconda3/envs/openr/bin/python3 -m fastchat.serve.controller --port 28777 --host 0.0.0.0
+
+xxx    624073  623967 99 18:47 pts/10   00:04:37 
+anaconda3/envs/openr/bin/python3 -m reason.llm_service.workers.reward_model_worker --model-path /mnt/nasdata/xxx/llms/huggingface/math-shepherd-mistral-7b-prm --controller-address http://0.0.0.0:28777 --host 0.0.0.0 --port 30011 --worker-address http://0.0.0.0:30011
+
+
+xxx 624074  623975 99 18:47 pts/11   00:01:44 
+anaconda3/envs/openr/bin/python3 -m reason.llm_service.workers.vllm_worker --model-path /mnt/nasdata/xxx/llms/huggingface/mistral-7b-sft --controller-address http://0.0.0.0:28777 --host 0.0.0.0 --port 30010 --worker-address http://0.0.0.0:30010 --dtype bfloat16 --swap-space 32
+
+```
+
+
 ## Run Inference
 
 <div style="border: 1px solid #ffcc00; background-color: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 10px">
