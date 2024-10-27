@@ -73,9 +73,11 @@ Reasoning with LLMs
 
 ## 🚀 News and Updates
 
+<span style="color: #555; font-weight: bold;">[11/10/2024]</span> ***OpenR*** now supports MCTS reasoning ! <span style="color: #007acc;" > ([#24](https://github.com/openreasoner/openr/pull/24))</span> 
+
 <span style="color: #555; font-weight: bold;">[11/10/2024]</span> Our paper is on <span style="color: #007acc;" > [**Arxiv**](https://arxiv.org/abs/2410.09671)</span> !
 
-<span style="color: #555; font-weight: bold;">[11/10/2024]</span> <span style="color: #007acc;">*OpenR* has been released!</span>
+<span style="color: #555; font-weight: bold;">[11/10/2024]</span> <span style="color: #007acc;">***OpenR*** has been released!</span>
 
 
 ## Key Features

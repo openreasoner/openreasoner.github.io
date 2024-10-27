@@ -6,12 +6,19 @@ nav_order: 5
 
 
 # Reasoning
-Once a
-high-quality process reward model is trained, we integrate it into the decoding process alongside the
+{: .no_toc }
+
+Once a high-quality process reward model is trained, we integrate it into the decoding process alongside the
 language model, enabling guided search and scoring or voting across multiple generations.
 
->*OpenR* supports various search algorithms — such as *beam search*, *best-of-N selection*, and others, each with unique advantages depending on the quality of PRMs.
+>*OpenR* supports various search algorithms — such as *beam search*, *best-of-N selection* and *Monte-carlo Tree Search*. We will be contantly update the framework to include more classic reasoning methods.
 
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
 
 ## Basic Command
 
@@ -43,7 +50,7 @@ python reason/evaluation/evaluate.py \
 - **`--num_sequence`**: Number of sequences generated per inference step. Useful for methods like `best_of_n`, where multiple outputs are generated and evaluated.
 - **`--max_new_tokens`**: Specifies the maximum number of new tokens to generate.
 - **`--method`**: Chooses the search strategy. Options include:
-  - `MCTS` - Monte Carlo Tree Search
+  - `vanila_mcts` - Vanilla Monte Carlo Tree Search
   - `beam_search` - Beam Search
   - `best_of_n` - Select the best sequence from `n` generated options
 - **`--tree_max_depth`**: Specifies the maximum depth of the search tree. Primarily useful when using tree-based methods like MCTS or beam search.
